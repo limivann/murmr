@@ -1,0 +1,5 @@
+requests
+fastapi
+uvicorn
+numpy
+bert-extractive-summarizer

@@ -1,0 +1,25 @@
+GET http://localhost:8000/
+
+###
+GET http://localhost:8000/health-news
+
+###
+POST http://localhost:8000/gemini-podcast
+Content-Type: application/json
+
+{
+    "analysis": "The user has sleep deprivation for few weeks, their diet is poor and their heart rate is very high",
+    "user_prompt": "I am feeling depressed this morning",
+    "news": "Research found that bananas are good for your health",
+    "mood": "sad"
+}
+
+###
+POST http://localhost:8000/generate
+Content-Type: application/json
+
+{
+    "health_file": "./something.csv",
+    "user_prompt": "I am feeling depressed this morning",
+    "mood": "sad"
+}
